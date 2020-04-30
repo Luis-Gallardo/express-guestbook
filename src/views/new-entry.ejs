@@ -1,0 +1,24 @@
+<%- include ('partials/header') %> 
+
+<div class="container col-md-5 mt-3">
+    <h3 class="text-center text-success text-monospace">Write a New Entry 📖</h4>
+
+
+        <form method="post">
+    
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" class="form-control" placeholder="Entry text new title" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="title">Entry Text</label>
+                <textarea class="form-control" name="body" id="body" rows="3" required></textarea>
+            </div>
+    
+            <div class="form-group">
+              <input type="submit" value="Post Entry 🎫" class="btn btn-success">
+            </div>
+    
+        </form>
+</div>

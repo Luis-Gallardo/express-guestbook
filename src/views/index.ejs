@@ -1,0 +1,21 @@
+<%- include ('partials/header') %> 
+
+<%if (Entries.length) { %>
+
+    <div class="container col-md-6 mt-3" >
+     <% Entries.forEach(function (entry) { %>
+         <div class="card text-monospace my-2">
+             <div class="card-header bg-success text-white" >
+                 <p class="float-right card-text"><%= entry.published %> <p>
+             </div>
+             <div class="card-body">
+                 <h3><%= entry.title %> </h3>
+                 <p><%= entry.body %> </p>
+             </div>
+         </div>
+     <% }) %>
+    </div>
+  
+ <% } else { %>
+     <h6 class="text-monospace text-primary mt-3">No entries yet 📗 ‼ <a class="btn btn-outline-success my-2 my-sm-0" href="/new-entry">ADD ONE 📖</a></h6>
+ <% } %>
