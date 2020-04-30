@@ -3,9 +3,10 @@
 # Edit at https://www.gitignore.io/?templates=node
 
 .vscode
+DS_Store
 .DS_Store
 .eslintrc.json
-
+eslintrc.json
 
 ### Node ###
 # Logs
